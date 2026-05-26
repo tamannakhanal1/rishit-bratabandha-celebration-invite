@@ -103,14 +103,17 @@ body {
 }
 
 .content-box {
-  width: min(50vw, 32.8vh);
-  height: min(74vh, 112.8vw);
+  /* Match the actual inner oval dimensions in the image */
+  width: min(46vw, 30.2vh);
+  height: min(68vh, 104vw);
   display: flex; flex-direction: column;
   align-items: center; text-align: center;
   justify-content: space-evenly;
-  margin-top: min(-14vw, -9.2vh);
+  /* Nudge to visually center inside the oval frame image */
+  margin-top: min(-6vw, -3.9vh);
   gap: 0;
-  padding: min(2vw, 1.3vh) 0;
+  padding: min(3vw, 2vh) min(1vw, 0.7vh);
+  overflow: hidden;
 }
 
 .ganesh {
@@ -131,10 +134,10 @@ body {
 
 .shloka {
   font-family: 'Noto Sans Devanagari', sans-serif;
-  font-size: min(3.0vw, 1.97vh);
-  color: var(--gold-l); line-height: 1.85; letter-spacing: 0.02em;
+  font-size: min(2.4vw, 1.58vh);
+  color: var(--gold-l); line-height: 1.7; letter-spacing: 0.02em;
   text-shadow: 0 1px 7px rgba(0,0,0,0.7);
-  flex-shrink: 0; margin-bottom: min(0.6vw, 0.39vh);
+  flex-shrink: 0;
 }
 
 .rule { width:86%; max-width:200px; display:flex; align-items:center; gap:4px; margin:min(0.55vw,0.36vh) 0; flex-shrink:0; }
@@ -142,10 +145,13 @@ body {
 .rd   { width:5px; height:5px; min-width:4px; min-height:4px; background:var(--gold-l); transform:rotate(45deg); flex-shrink:0; }
 .rp   { width:2.5px; height:2.5px; border-radius:50%; background:var(--gold); flex-shrink:0; opacity:0.7; }
 
-.fs-xs { font-size: min(3.2vw, 2.10vh); }
-.fs-sm { font-size: min(3.6vw, 2.36vh); }
-.fs-lg { font-size: min(7.2vw, 4.73vh); }
-.fs-xl { font-size: min(7.8vw, 5.12vh); }
+/* Smaller font sizes so everything fits inside the oval */
+.fs-xs { font-size: min(2.6vw, 1.71vh); }
+.fs-sm { font-size: min(2.9vw, 1.90vh); }
+.fs-lg { font-size: min(6.0vw, 3.94vh); }
+.fs-xl { font-size: min(6.4vw, 4.20vh); }
+
+.t-parents { font-style:italic; font-weight:600; color:rgba(212,168,75,0.9); letter-spacing:0.03em; text-shadow:0 1px 7px rgba(0,0,0,0.55); font-size: min(2.3vw, 1.51vh); }
 
 .t-italic  { font-style:italic; font-weight:600; }
 .t-cream   { color:var(--cream); text-shadow:0 1px 9px rgba(0,0,0,0.7); }
