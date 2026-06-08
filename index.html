@@ -21,9 +21,9 @@ body{font-family:'Cormorant',serif;color:var(--text);}
 .page-bg img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;height:100%;object-fit:cover;object-position:center;display:block;}
 .page-rsvp-bg{position:absolute;inset:0;background:rgba(35,2,18,0.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(212,168,75,0.3);z-index:0;}
 
-.content-box{position:relative;z-index:2;width:52vw;height:68vh;height:68dvh;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:space-evenly;margin-top:-3vh;padding:1vh 1vw;overflow:hidden;}
-
-.ganesh{width:min(12vw,7.9vh);max-width:80px;display:block;flex-shrink:0;filter:drop-shadow(0 4px 14px rgba(0,0,0,0.65));}
+.content-box{position:relative;z-index:2;width:50vw;height:66vh;height:66dvh;display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;gap:0.6vh;margin-top:-2vh;padding:0 1.5vw;overflow:hidden;}
+.ganesh-gap{margin-bottom:0.8vh;}
+.ganesh{width:min(11vw,6.8vh);max-width:68px;display:block;flex-shrink:0;filter:drop-shadow(0 3px 10px rgba(0,0,0,0.6));}
 .ganesh.animate{animation:ganeshGrow 1.6s cubic-bezier(0.22,1,0.36,1) forwards;}
 @keyframes ganeshGrow{0%{opacity:0;transform:scale(0.4);}65%{opacity:1;transform:scale(1.05);}85%{transform:scale(0.97);}100%{opacity:1;transform:scale(1);}}
 
@@ -33,12 +33,12 @@ body{font-family:'Cormorant',serif;color:var(--text);}
 .rp{width:3px;height:3px;border-radius:50%;background:var(--gold);flex-shrink:0;opacity:0.7;}
 
 .shloka{font-family:'Noto Sans Devanagari',sans-serif;font-size:min(1.5vw,0.85vh);color:var(--gold-l);line-height:1.8;letter-spacing:0.01em;opacity:0.85;flex-shrink:0;}
-.t-body{font-size:min(3.8vw,2.2vh);font-style:italic;font-weight:600;line-height:1.55;color:var(--cream);text-shadow:0 1px 9px rgba(0,0,0,0.7);flex-shrink:0;}
-.t-muted{font-size:min(3.8vw,2.2vh);font-style:italic;font-weight:500;line-height:1.55;color:rgba(245,232,200,0.9);text-shadow:0 1px 9px rgba(0,0,0,0.7);flex-shrink:0;}
-.t-title{font-family:'Cormorant Upright',serif;font-size:min(7.5vw,4.4vh);font-weight:500;color:var(--gold-l);letter-spacing:0.03em;line-height:1.15;text-shadow:0 2px 14px rgba(0,0,0,0.6);flex-shrink:0;}
-.t-name{font-family:'Cormorant Upright',serif;font-size:min(8.5vw,5vh);font-weight:500;color:var(--gold-l);letter-spacing:0.03em;line-height:1.1;text-shadow:0 2px 14px rgba(0,0,0,0.6);flex-shrink:0;}
-.t-parents{font-size:min(3vw,1.75vh);font-style:italic;font-weight:600;color:rgba(212,168,75,0.9);letter-spacing:0.02em;line-height:1.4;text-shadow:0 1px 7px rgba(0,0,0,0.55);flex-shrink:0;}
-.t-parents-val{font-size:min(3vw,1.75vh);font-style:italic;font-weight:600;color:rgba(245,232,200,0.92);letter-spacing:0.02em;line-height:1.4;text-shadow:0 1px 7px rgba(0,0,0,0.55);flex-shrink:0;}
+.t-body{font-size:min(3.2vw,1.75vh);font-style:italic;font-weight:500;line-height:1.5;color:rgba(245,232,200,0.88);text-shadow:0 1px 9px rgba(0,0,0,0.7);flex-shrink:0;}
+.t-muted{font-size:min(3.2vw,1.75vh);font-style:italic;font-weight:500;line-height:1.5;color:rgba(245,232,200,0.88);text-shadow:0 1px 9px rgba(0,0,0,0.7);flex-shrink:0;}
+.t-title{font-family:'Cormorant Upright',serif;font-size:min(7.2vw,4.2vh);font-weight:500;color:var(--gold-l);letter-spacing:0.04em;line-height:1.1;text-shadow:0 2px 12px rgba(0,0,0,0.5);flex-shrink:0;}
+.t-name{font-family:'Cormorant Upright',serif;font-size:min(8.2vw,4.8vh);font-weight:500;color:var(--gold-l);letter-spacing:0.04em;line-height:1.05;text-shadow:0 2px 12px rgba(0,0,0,0.5);flex-shrink:0;}
+.t-parents{font-size:min(2.7vw,1.55vh);font-style:italic;font-weight:600;color:rgba(212,168,75,0.9);letter-spacing:0.04em;line-height:1.4;text-shadow:0 1px 7px rgba(0,0,0,0.55);flex-shrink:0;}
+.t-parents-val{font-size:min(2.8vw,1.65vh);font-style:italic;font-weight:600;color:rgba(245,232,200,0.92);letter-spacing:0.02em;line-height:1.4;text-shadow:0 1px 7px rgba(0,0,0,0.55);flex-shrink:0;}
 .t-label{font-family:'Cormorant Upright',serif;font-size:min(6vw,3.5vh);font-weight:600;color:var(--gold-l);letter-spacing:0.06em;line-height:1.2;text-shadow:0 0 14px rgba(240,204,112,0.35),0 2px 10px rgba(0,0,0,0.6);flex-shrink:0;}
 .t-date{font-size:min(3.6vw,2.1vh);font-style:italic;font-weight:700;color:#fff;text-decoration:underline;text-underline-offset:3px;line-height:1.5;letter-spacing:0.02em;text-shadow:0 1px 10px rgba(0,0,0,0.7);flex-shrink:0;}
 .t-venue{font-size:min(4vw,2.3vh);font-style:italic;font-weight:700;color:var(--cream);line-height:1.3;text-shadow:0 1px 9px rgba(0,0,0,0.7);flex-shrink:0;}
@@ -116,18 +116,17 @@ body{font-family:'Cormorant',serif;color:var(--text);}
   <div class="page" id="p0">
     <div class="page-bg"><img src="frame for rishit.png" alt="Decorative oval frame"/></div>
     <div class="content-box">
-      <img class="ganesh animate" src="ganesh for rishit.png" alt="Lord Ganesha"/>
+      <img class="ganesh animate ganesh-gap" src="ganesh for rishit.png" alt="Lord Ganesha"/>
       <div class="shloka reveal d1">
         | वक्रतुण्ड महाकाय सूर्यकोटि समप्रभः |<br>
         ॥ निर्विघ्नं कुरु मे देवः सर्वकार्येषु सर्वदा ॥
       </div>
       <div class="rule reveal d1"><div class="rl"></div><div class="rp"></div><div class="rd"></div><div class="rp"></div><div class="rl"></div></div>
-      <p class="t-body reveal d2">By the divine grace of the Almighty,<br>and with the blessings of our esteemed elders,</p>
-      <p class="t-muted reveal d3">we warmly invite you to join us<br>for the joyous occasion of the</p>
+      <p class="t-body reveal d2">By the divine grace of the Almighty,<br>and with the blessings of our esteemed elders,<br>we warmly invite you to the joyous occasion of the</p>
       <div class="rule reveal d3" style="width:72%;"><div class="rl"></div><div class="rd"></div><div class="rl"></div></div>
-      <div class="t-title reveal d4">Bratabandha Reception</div>
-      <div class="rule reveal d4" style="width:72%;"><div class="rl"></div><div class="rd"></div><div class="rl"></div></div>
-      <p class="t-muted reveal d5" style="font-size:min(3.4vw,2vh);">of</p>
+      <div class="t-title reveal d3">Bratabandha Reception</div>
+      <div class="rule reveal d3" style="width:72%;"><div class="rl"></div><div class="rd"></div><div class="rl"></div></div>
+      <p class="t-muted reveal d4" style="font-size:min(2.6vw,1.45vh);">of</p>
       <div class="t-name reveal d5">Rishit Dahal</div>
       <p class="t-parents reveal d5">Son of</p>
       <p class="t-parents-val reveal d5">Archana Wasti Dahal &amp; Samir Prasad Dahal</p>
