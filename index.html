@@ -129,11 +129,11 @@ body{font-family:'Cormorant',serif;color:var(--text);}
       <p class="t-muted reveal d4" style="font-size:min(2.6vw,1.45vh);">of</p>
       <div class="t-name reveal d5">Rishit Dahal</div>
       <p class="t-parents reveal d5">Son of</p>
-      <p class="t-parents-val reveal d5">Archana &amp; Samir Prasad Dahal</p>
+      <p class="t-parents-val reveal d5">Archana Wasti Dahal &amp; Samir Prasad Dahal</p>
       <div class="rule reveal d6" style="width:60%;"><div class="rl"></div><div class="rd"></div><div class="rl"></div></div>
       <p class="t-parents reveal d6">Grandson of</p>
-      <p class="t-parents-val reveal d6">Saraswati &amp; Mohan Prasad Dahal</p>
-      <p class="t-parents-val reveal d7">Ganga &amp; Vedraj Wasti</p>
+      <p class="t-parents-val reveal d6">Saraswati Dahal &amp; Mohan Prasad Dahal</p>
+      <p class="t-parents-val reveal d7">Ganga Wasti &amp; Vedraj Wasti</p>
     </div>
     <div class="scroll-hint" aria-hidden="true"><span>scroll</span><div class="chevrons"><div class="chev"></div><div class="chev"></div><div class="chev"></div></div></div>
   </div>
@@ -241,7 +241,7 @@ function send(){
   if(!name){document.getElementById('rsvp-name').focus();alert('Please enter your name.');return;}
   var btn=document.getElementById('sub-btn');
   btn.textContent='Sending…';btn.disabled=true;
-  fetch('https://formspree.io/f/mwvjovel',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name:name,guests:ec==='decline'?'0':guests,attendance:ec==='attend'?'Will Attend':'Unable to Attend',events:'Bratabandha Reception — Sun Jul 12, 5:50 PM · Namaste Pavillion',_subject:'Bratabandha RSVP — '+name})})
+  fetch('https://script.google.com/macros/s/AKfycbyt-3cja4fNpXifQR9LHkkKNxTD-ykcvSepmK0mZVdh1h-lZTFtC9NxOeOwJF9PuC3CyQ/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name,guests:ec==='decline'?'0':guests,attendance:ec==='attend'?'Will Attend':'Unable to Attend',events:'Bratabandha Reception — Sun Jul 12, 5:50 PM · Namaste Pavillion'})})
   .then(function(){
     var form=document.getElementById('rsvp-form'),succ=document.getElementById('rsvp-success');
     document.getElementById('s-name').textContent=name;
