@@ -241,7 +241,7 @@ function send(){
   if(!name){document.getElementById('rsvp-name').focus();alert('Please enter your name.');return;}
   var btn=document.getElementById('sub-btn');
   btn.textContent='Sending…';btn.disabled=true;
-  fetch('https://script.google.com/macros/s/AKfycbyt-3cja4fNpXifQR9LHkkKNxTD-ykcvSepmK0mZVdh1h-lZTFtC9NxOeOwJF9PuC3CyQ/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name,guests:ec==='decline'?'0':guests,attendance:ec==='attend'?'Will Attend':'Unable to Attend',events:'Bratabandha Reception — Sun Jul 12, 5:50 PM · Namaste Pavillion'})})
+  fetch('https://script.google.com/macros/s/AKfycby2RHGuJ4yE4-LnE-xAk30FwaN18_3HgOE8dZP5vTz7gIVt_50kxYJxJfkxOCtC2BvnBQ/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:name,guests:ec==='decline'?'0':guests,attendance:ec==='attend'?'Will Attend':'Unable to Attend',events:'Bratabandha Reception — Sun Jul 12, 5:50 PM · Namaste Pavillion'})})
   .then(function(){
     var form=document.getElementById('rsvp-form'),succ=document.getElementById('rsvp-success');
     document.getElementById('s-name').textContent=name;
